@@ -1,0 +1,95 @@
+$color-black:#000000;
+@mixin galery {
+     width: 100%;
+     height: 300px;
+     background-size: cover;
+     background-position: center center;
+     position: relative;
+     margin-bottom: 30px;
+      display: table;   
+     
+     
+}
+
+@mixin btnb {
+      width: 40%;
+      color: #fff !important;
+      order: 2px solid #00ADB5;
+      background: #00ADB5;
+      height: 3rem;
+      &:hover{
+            background: #00acb5a1;
+      }
+}
+@mixin btnr {
+      width: 40%;
+      color: #fff !important;
+      border: 2px solid #FA5555;
+     background: #FA5555;
+     height: 3rem;
+     &:hover{
+      background: #fa555585;
+     }
+      
+}
+.bt-box,content{
+      @media screen and (max-width:1000px){
+           width: 100% !important;
+      }
+}
+// .about{
+//       @media screen and (max-width:1200px){
+//            flex-direction: column !important;
+//            align-items: center !important;
+//        }
+// }
+.item{
+      @media screen and (max-width:1200px){
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100%;
+        }
+}
+.dis{
+      @media screen and (min-width:840px){
+            display: none !important; ;
+         }
+
+      @media screen and (max-width:840px){
+           display: inline!important;
+        }
+}
+.navbar{
+      display:flex;
+}
+.navbar-brand::after,::before{
+      @media screen and (max-width:840px){
+            display: none !important;;
+       }
+}
+.DIS{
+
+      @media screen and (max-width:840px){
+           display: none !important;
+      }
+}
+.brand{
+      @media screen and (max-width:840px){
+          margin-right: 35rem;
+      }
+      @media screen and (max-width:785px){
+            margin-right: 31rem;
+        }
+        @media screen and (max-width:725px){
+            margin-right: 27rem;
+        }
+        @media screen and (max-width:667px){
+            margin-right: 22rem;
+        }
+        @media screen and (max-width:575px){
+            margin-right: 15rem;
+        }
+        @media screen and (max-width:465px){
+            margin-right: 8rem;
+        }
+}
